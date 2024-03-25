@@ -1,8 +1,8 @@
 #include <iostream>
 int main() {
 // Definindo os números para as operações
-int num1 = 10;
-int num2 = 5;
+int num1 = 15;
+int num2 = 20;
 // Realizando as operações matemáticas
 int soma = num1 + num2;
 int subtracao = num1 - num2;
