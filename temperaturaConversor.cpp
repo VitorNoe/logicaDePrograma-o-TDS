@@ -11,8 +11,16 @@ int main() {
     // Converte a temperatura de Celsius para Fahrenheit
     temperaturaFahrenheit = (temperaturaCelsius * 9/5) + 32;
 
-    // Exibe o resultado da conversão
-    cout << "A temperatura em Fahrenheit é: " << temperaturaFahrenheit << " graus Fahrenheit" << endl;
+    // Verifica se a temperatura em Fahrenheit é alta (por exemplo, maior que 100 graus Fahrenheit)
+    if (temperaturaFahrenheit > 100) {
+        // Imprime o resultado em vermelho
+        cout << "\033[1;31m"; // Sequência de escape ANSI para cor vermelha brilhante
+        cout << "A temperatura em Fahrenheit é: " << temperaturaFahrenheit << " graus Fahrenheit" << endl;
+        cout << "\033[0m"; // Reset da cor para a cor padrão
+    } else {
+        // Imprime o resultado normalmente
+        cout << "A temperatura em Fahrenheit é: " << temperaturaFahrenheit << " graus Fahrenheit" << endl;
+    }
 
     return 0;
 }
